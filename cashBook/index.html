@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+          <h3>HOME</h3>
+          <input id = "title" placeholder="Title" type="text" maxlength="10" required />
+          <input id = "amount" placeholder="12345" type="number" maxlength="100000" required/>
+          <div class="radio">
+                    <input id = "Dr" type="radio" value="Dr" name="nature" />DEBIT
+                    <input id = "Cr" type="radio" value="Cr" name="nature" />CREDIT
+          </div>
+          <br>
+          <button class="simBtn" onclick="delAllItem()">Delete All</button>
+          <button class="simBtn" onclick="saveData()">ADD ITEM</button>
+          <div>
+                    <table>
+                              <thead>
+                                        <tr>
+                                                  <td colspan="2">TITLE</td>
+                                                  <td colspan="2">AMOUNT</td>
+                                                  <td>DEBIT</td>
+                                                  <td>CREDIT</td>
+                                                  <td>Button</td>
+                                        </tr>
+                              </thead>
+                              <tbody id="data">
+
+                              </tbody>
+                    </table>
+                    <!-- <ol id="data">
+
+                    </ol> -->
+          </div>
+</body>
+<script src="app.js"></script>
+
+</html>
